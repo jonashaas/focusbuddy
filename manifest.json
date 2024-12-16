@@ -2,22 +2,16 @@
   "name": "FocusBuddy",
   "version": "1.0",
   "manifest_version": 3,
-  "description": "Erinnert dich alle 60 Sekunden mit einem Ton an deinen Fokus.",
+  "description": "Reminds your ADHD brain to focus every 60 seconds.",
   "action": {
     "default_popup": "popup.html",
-    "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
-    }
+    "default_icon": "icons/iconstart48.png"
   },
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["storage"],
+  "permissions": ["alarms", "offscreen"],
   "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "48": "icons/iconstart48.png"
   }
 }
